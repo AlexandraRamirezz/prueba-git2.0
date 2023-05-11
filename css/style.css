@@ -7,6 +7,9 @@ body {
 header {
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -26,7 +29,7 @@ nav ul {
 nav ul li a {
     color: #333;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 section {
@@ -76,6 +79,112 @@ input,
 textarea {
     padding: 10
 }
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.producto {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.producto .titulo {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto .precio {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.producto .descripcion {
+    padding: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+
+.news {
+    padding: 60px 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.news .card {
+    border: none;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news .card-body {
+    padding: 20px;
+}
+
+.news .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news .card-text {
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.news .btn {
+    background-color: #333;
+    border-color: #333;
+}
+
+.news .btn:hover {
+    background-color: #a19a9a;
+    border-color: #c9c3c3;
+}
+
+
+
 
 footer {
     display: grid;
